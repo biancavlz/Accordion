@@ -2,7 +2,7 @@ function AccordionItem({ num, title, text, currentOpen, onOpen, children }) {
   const isOpen = currentOpen === num;
 
   function handleToggle() {
-    onOpen(num);
+    onOpen(isOpen ? null : num);
   }
 
   return (
