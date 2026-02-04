@@ -11,10 +11,11 @@ function Accordion({ data }) {
           currentOpen={currentOpen}
           onOpen={setCurrentOpen}
           title={el.title}
-          text={el.text}
           num={i}
           key={el.title}
-        />
+        >
+          {el.text}
+        </AccordionItem>
       ))}
     </div>
   );
